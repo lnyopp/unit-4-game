@@ -1,35 +1,46 @@
-//global random number variable. 
-var number = Math.floor(Math.random() * 100) + 1; 
-var wins = 0;
-var losses = 0 ; 
-// this array is for totaling random gem guesses. 
-var gemTotal = [];
-
-
 
 $(document).ready(function() {
     
+  //global random number variable. 
+var number = Math.floor(Math.random() * 100) + 1; 
+var wins = 0;
+var losses = 0 ; 
+
+var crystalOne = 0;
+var crystalTwo = 0;
+var crystalThree = 0;
+var crystalFour = 0;
+
+var gemTotal = 0;
+
+
+function crystalNumber(crystal){
+  
+} Math.floor(Math.random() * 10) + 1;};
+
     // computer generated random number 
     $("#computer-choice").text(number);
    
-    //random number generation for gems
+    //random number generation for each crystal. 
+    // all in divs in html.
+    // each value must stay the same after first click. 
 
-    $("#random-click-1").on("click", function gemOne() {
 
-      // ... we generate a random number
-      var random = Math.floor(Math.random() * 10) + 1;
-        
-    //unsure what method to use here...
+    $("#random-click-1").on("click", crystalNumber)
+      console.log(crystalNumber);
 
-    //this prints directly into the "random-number-1" div.
-    // $("#random-number-1").text(random);
-    // });
+
+    $("#random-click-2").on("click", crystalNumber)
+    console.log(crystalNumber);
+
+  
+    $("#random-click-3").on("click", crystalNumber)
+     console.log(crystalNumber);
+
     
-
-    //created 4 divs (1 for each cystal)
-    // created 4 additional divs to associate random number with each crystal
-    
-    // unsure how to get this number to be fixed, 
+  $("#random-click-4").on("click", crystalNumber)
+    console.log(crystalNumber)
+     
 
     
 });
