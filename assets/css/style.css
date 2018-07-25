@@ -1,0 +1,15 @@
+
+
+.crystals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: left;
+}
+
+.crystal {
+    border: 1px solid green;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}   

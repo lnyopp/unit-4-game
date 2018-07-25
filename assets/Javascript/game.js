@@ -1,46 +1,25 @@
-
-$(document).ready(function() {
-    
-  //global random number variable. 
-var number = Math.floor(Math.random() * 100) + 1; 
+var random = ""
 var wins = 0;
 var losses = 0 ; 
 
-var crystalOne = 0;
-var crystalTwo = 0;
-var crystalThree = 0;
-var crystalFour = 0;
 
-var gemTotal = 0;
+    //displays var number in my computer choice div.
+    $(document).ready(function(){
 
 
-function crystalNumber(crystal){
-  
-} Math.floor(Math.random() * 10) + 1;};
+    for(var i = 0; i < 4; i++){
+// for loop runs this function 4 times.
+      var randomNumber = Math.floor(Math.random()* 12);
 
-    // computer generated random number 
-    $("#computer-choice").text(number);
-   
-    //random number generation for each crystal. 
-    // all in divs in html.
-    // each value must stay the same after first click. 
-
-
-    $("#random-click-1").on("click", crystalNumber)
-      console.log(crystalNumber);
-
-
-    $("#random-click-2").on("click", crystalNumber)
-    console.log(crystalNumber);
-
-  
-    $("#random-click-3").on("click", crystalNumber)
-     console.log(crystalNumber);
-
+      var crystal = $("<div>");
+          crystal.attr("class",'crystal');
+          crystal.append(randomNumber);
+      //creates a div 4 times for the variable crystal.
+      
+      $(".crystals").append(crystal);
+    }
     
-  $("#random-click-4").on("click", crystalNumber)
-    console.log(crystalNumber)
-     
-
     
-});
+  
+  });
+  
